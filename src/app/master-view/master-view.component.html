@@ -1,0 +1,62 @@
+<igx-grid [data]="dataSource5Table1" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="30%" height="30%" displayDensity="cosy" primaryKey="CustomerID" class="grid">
+  <igx-column field="CustomerID" header="CustomerID" title="CustomerID" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="CompanyName" header="CompanyName" title="CompanyName" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="ContactName" header="ContactName" title="ContactName" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="ContactTitle" header="ContactTitle" title="ContactTitle" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="Address" header="Address" title="Address" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="City" header="City" title="City" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="Region" header="Region" title="Region" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="Country" header="Country" title="Country" dataType="string" [sortable]="true"></igx-column>
+</igx-grid>
+<igx-grid [data]="dataSource4Table1" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="30%" height="30%" displayDensity="cosy" primaryKey="id" class="grid">
+  <igx-column field="userId" header="userId" title="userId" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="id" header="id" title="id" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="title" header="title" title="title" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="completed" header="completed" title="completed" dataType="boolean" [sortable]="true"></igx-column>
+</igx-grid>
+<igx-grid [data]="northwindEmployees" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="30%" height="30%" displayDensity="cosy" primaryKey="employeeID" class="grid">
+  <igx-column field="employeeID" header="employeeID" title="employeeID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="lastName" header="lastName" title="lastName" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="firstName" header="firstName" title="firstName" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="title" header="title" title="title" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="titleOfCourtesy" header="titleOfCourtesy" title="titleOfCourtesy" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="birthDate" header="birthDate" title="birthDate" dataType="date" [sortable]="true"></igx-column>
+  <igx-column field="hireDate" header="hireDate" title="hireDate" dataType="date" [sortable]="true"></igx-column>
+  <igx-column field="address.street" header="street" title="address.street" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="address.city" header="city" title="address.city" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="address.region" header="region" title="address.region" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="address.postalCode" header="postalCode" title="address.postalCode" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="address.country" header="country" title="address.country" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="address.phone" header="phone" title="address.phone" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="notes" header="notes" title="notes" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="reportsTo" header="reportsTo" title="reportsTo" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="avatarUrl" header="avatarUrl" title="avatarUrl" dataType="string" [sortable]="true"></igx-column>
+</igx-grid>
+<igx-grid [data]="northwindProducts" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="30%" height="30%" displayDensity="cosy" primaryKey="productID" class="grid">
+  <igx-column field="productID" header="productID" title="productID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="supplierID" header="supplierID" title="supplierID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="categoryID" header="categoryID" title="categoryID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="quantityPerUnit" header="quantityPerUnit" title="quantityPerUnit" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="unitPrice" header="unitPrice" title="unitPrice" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="unitsInStock" header="unitsInStock" title="unitsInStock" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="unitsOnOrder" header="unitsOnOrder" title="unitsOnOrder" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="reorderLevel" header="reorderLevel" title="reorderLevel" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="discontinued" header="discontinued" title="discontinued" dataType="boolean" [sortable]="true"></igx-column>
+  <igx-column field="name" header="name" title="name" dataType="string" [sortable]="true"></igx-column>
+</igx-grid>
+<igx-grid [data]="northwindRegions" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="30%" height="30%" displayDensity="cosy" primaryKey="regionID" class="grid">
+  <igx-column field="regionID" header="regionID" title="regionID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="name" header="name" title="name" dataType="string" [sortable]="true"></igx-column>
+</igx-grid>
+<igx-grid [data]="northwindProducts" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="30%" height="30%" displayDensity="cosy" primaryKey="productID" class="grid">
+  <igx-column field="productID" header="productID" title="productID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="supplierID" header="supplierID" title="supplierID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="categoryID" header="categoryID" title="categoryID" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="quantityPerUnit" header="quantityPerUnit" title="quantityPerUnit" dataType="string" [sortable]="true"></igx-column>
+  <igx-column field="unitPrice" header="unitPrice" title="unitPrice" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="unitsInStock" header="unitsInStock" title="unitsInStock" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="unitsOnOrder" header="unitsOnOrder" title="unitsOnOrder" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="reorderLevel" header="reorderLevel" title="reorderLevel" dataType="number" [sortable]="true"></igx-column>
+  <igx-column field="discontinued" header="discontinued" title="discontinued" dataType="boolean" [sortable]="true"></igx-column>
+  <igx-column field="name" header="name" title="name" dataType="string" [sortable]="true"></igx-column>
+</igx-grid>
